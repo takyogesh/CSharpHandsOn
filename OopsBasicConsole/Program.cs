@@ -15,7 +15,6 @@ namespace OopsBasicConsole
 
             int n1 = 100;
             int n2 = 50;
-
             Calculator calc = new Calculator();
             calc.add = "Addition";
             calc.Addition(n1, n2);
@@ -25,7 +24,9 @@ namespace OopsBasicConsole
             calc.Multiplication(n1, n2);
             calc.div = "Division";
             calc.Division(n1, n2);
-      
+
+            BaseClass bClassObj = new BaseClass();
+            bClassObj.sum();
             Console.Read();
         }
 
