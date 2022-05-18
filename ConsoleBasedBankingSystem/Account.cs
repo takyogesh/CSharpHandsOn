@@ -8,7 +8,7 @@ namespace ConsoleBasedBankingSystem
 {
     public abstract class Account
     {
-        public abstract void AccountDetails(String Name, int AcctNum,long PhNum, int Bal);
+        public abstract void AccountDetails(String Name, int AcctNum,String PhNum, int Bal);
         public abstract int DepositAmt(int Amt);
         public abstract int WithdrawAmt(int Amt);
         public abstract String DisplayAccountDetails();
@@ -24,12 +24,12 @@ namespace ConsoleBasedBankingSystem
     {
         //inherite the account class
         string AccounttHolderName;
-        long MobileNum;
+        String MobileNum;
         private int AccountNum;
         private int Balance;
         public ATM AtmObj;
 
-        public override void AccountDetails(string Name, int AcctNum, long PhNum, int Bal)
+        public override void AccountDetails(string Name, int AcctNum, String PhNum, int Bal)
         {
             AccounttHolderName= Name;
             AccountNum= AcctNum;
@@ -84,11 +84,11 @@ namespace ConsoleBasedBankingSystem
     {
         String AccounttHolderName;
         private int AccountNum;
-        long MobileNum;
+        String MobileNum;
         private int Balance;
         public ATM atm = null;
 
-        public override void AccountDetails(string Name, int AcctNum, long PhNum, int Bal)
+        public override void AccountDetails(string Name, int AcctNum, String PhNum, int Bal)
         {
             AccounttHolderName = Name;
             AccountNum = AcctNum;
