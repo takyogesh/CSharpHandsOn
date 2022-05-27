@@ -13,26 +13,24 @@ namespace BillingAndInventoryManagementSystem
             //User details
             UserModule userModuleObj = new UserModule();
             userModuleObj.UserDetails();        //Insert the details
-            userModuleObj.Write();                 //write intxt file
+            userModuleObj.UserDetails();
+            userModuleObj.UserDetails();
             userModuleObj.Read();                  // read from txt file
 
             Console.WriteLine("*****************");
             // catergory details
             CategoryModule categoryModuleObj = new CategoryModule();
             categoryModuleObj.CategoryDetails();
-            categoryModuleObj.Write();
 
             Console.WriteLine("*****************");
             //Product Details
             ProductModule productModuleObj = new ProductModule();
             productModuleObj.ProductDetails();
-            productModuleObj.Write();
 
             Console.WriteLine("*****************");
             //Purchase and sell details
             PurchaseAndSellModule purchaseAndSellModuleObj = new PurchaseAndSellModule();
             purchaseAndSellModuleObj.PurchaseDetails();
-            purchaseAndSellModuleObj.Write();
 
 
             Console.Read();

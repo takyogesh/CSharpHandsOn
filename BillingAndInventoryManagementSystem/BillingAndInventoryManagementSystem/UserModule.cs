@@ -39,8 +39,9 @@ namespace BillingAndInventoryManagementSystem
             this.email = Console.ReadLine();
             Console.WriteLine("Enter Phone Number");
             this.phone = Console.ReadLine();
+            Write();
         }
-        public void Write()
+        private void Write()
         {
             fileStreamobj = new FileStream(@"C:\CustomFiles\User.txt", FileMode.Append, FileAccess.Write);
             streamWriterObj = new StreamWriter(fileStreamobj);

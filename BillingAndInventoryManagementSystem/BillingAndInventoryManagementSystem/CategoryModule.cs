@@ -29,8 +29,9 @@ namespace BillingAndInventoryManagementSystem
             this.categoryid = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter Category Type");
             this.categorytype = Console.ReadLine();
+            Write();
         }
-        public override void Write()
+        private void Write()
         {
             fileStreamobj = new FileStream(@"C:\CustomFiles\Category.txt", FileMode.Append, FileAccess.Write);
             streamWriterObj = new StreamWriter(fileStreamobj);

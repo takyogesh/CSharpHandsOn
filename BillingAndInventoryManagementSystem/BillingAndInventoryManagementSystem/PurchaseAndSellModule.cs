@@ -35,8 +35,9 @@ namespace BillingAndInventoryManagementSystem
             this.price = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter Date");
             this.salesdate = Console.ReadLine();
+            Write();
         }
-        public override void Write()
+        private void Write()
         {
             fileStreamobj = new FileStream(@"C:\CustomFiles\Purchase.txt", FileMode.Append, FileAccess.Write);
             streamWriterObj = new StreamWriter(fileStreamobj);

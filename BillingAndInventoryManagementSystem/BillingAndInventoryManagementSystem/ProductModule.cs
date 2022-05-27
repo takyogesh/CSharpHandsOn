@@ -40,7 +40,7 @@ namespace BillingAndInventoryManagementSystem
             this.price = Convert.ToInt32(Console.ReadLine());
             Write();
         }
-        public virtual void Write()
+        private void Write()
         {
             fileStreamobj = new FileStream(@"C:\CustomFiles\Product.txt", FileMode.Append, FileAccess.Write);
             swObj = new StreamWriter(fileStreamobj);
