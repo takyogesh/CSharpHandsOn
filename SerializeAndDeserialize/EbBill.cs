@@ -113,9 +113,9 @@ namespace SerializeAndDeserialize
             XmlSerializer xs = new XmlSerializer(typeof(List<EbBill>));
             List<EbBill> customer = (List<EbBill>)xs.Deserialize(fs);
            foreach(var data in customer)
-            {
+           {
                 Console.WriteLine(data);
-            }
+           }
             fs.Close();
         }
         }
